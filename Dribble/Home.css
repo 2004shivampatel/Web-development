@@ -1,0 +1,251 @@
+
+.div-container h2 {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+
+.big-nav-search select{
+    position: absolute;
+    cursor: pointer;
+}
+
+#searchInput:focus{
+    width: 420px;
+}
+
+.big-nav-search i{
+    position: absolute;
+    margin-left: 390px;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.nav-search-bar {
+  margin-left: 20px;
+}
+
+.big-nav-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#searchInput {
+  width: 400px;
+  padding: 12px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#searchInput:focus {
+  width: 420px;
+  border: 2px solid black;
+  outline: none;
+}
+
+#select-form {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='10' width='10' viewBox='0 0 20 20'><path d='M5.516 7.548L10 12.032l4.484-4.484L16 9.064 10 15.064 4 9.064z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-left: 340px;
+  background-size: 12px;
+}
+
+#select-form:focus {
+  outline: none;
+}
+
+.big-nav-search i {
+  position: absolute;
+  right: 10px;
+  color: black;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+ .site-nav-main{
+  --site-nav-main-gap: 32px;
+   white-space-collapse: collapse;
+   margin-left: 30px;
+ }
+
+ nav{
+  unicode-bidi: isolate;
+  display: flex;
+ }
+
+ @media(max-width: 1204px)
+ {
+    .site-nav-main{
+      visibility: hidden;
+      position: fixed;
+      top: var(--site-nav-height);
+      right: 0;
+      width: 100%;
+      
+    }
+ }
+
+.site-nav-main__list{
+ list-style: none;
+  padding: 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px; /* optional spacing between items */
+}
+
+.site-nav-main__item {
+  position: relative;
+}
+
+.site-nav-main__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.site-nav-main__link:hover {
+  color: #ea4c89;
+}
+
+.site-nav-sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+}
+
+.site-nav-main__item:hover .site-nav-sub {
+  display: block;
+}
+
+.site-nav-sub__link {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.site-nav-sub__link svg {
+  margin-right: 10px;
+  stroke: #888;
+}
+
+.site-nav-sub__link:hover {
+  background-color: #f7f7f7;
+  color: #ea4c89;
+}
+
+.site-nav-sub__divider {
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.main {
+  display: flex;
+  background: linear-gradient(to left,blue,green,pink,red,maroon,violet);
+  margin: -8px -12px 18px;
+  padding: 18px;
+}
+
+
+ul {
+  list-style: none; /* removes bullets */
+  padding: 0;
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none; /* removes underline */
+  color: #000; /* adjust text color */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between icon and text */
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+ul li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+a:hover,
+.site-nav-main__link:hover,
+.site-nav-sub__link:hover {
+  text-decoration: underline;
+  color: #ea4c89; /* Dribbble pink */
+}
+
+a,
+.site-nav-main__link,
+.site-nav-sub__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+.site-nav-main__list,
+.site-nav-sub {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.Log{
+  font-weight: bolder;
+  display: flex;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-left: 300px;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.sign:hover{
+  color: white;
+}
+
+.sign-in{
+    border-radius: 20px 20px 20px 20px; 
+    background: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    height: 40px;
+    width: 140px; 
+    margin-left: 80px;
+}
+
+.sign-in:hover{
+  color: aqua;
+}
