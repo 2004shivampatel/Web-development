@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background: rgba(0, 0, 0, 0.12);
+  /* Optional dark background */
+  z-index: 3;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+.main-sub-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.li-navbar a:hover {
+  color: #ffcc00;
+}
+
+.li-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-container {
+  position: relative;
+  z-index: 3;
+}
+
+.ul-navbar {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+@font-face {
+  font-family: "Nicotine";
+  src: url("./fonts/Nicotine-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-sub-container img {
+  height: 40px;
+  width: 40px;
+}
+
+.main-sub-container h3 {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.above-video-content {
+  position: absolute;
+  cursor: pointer;
+  top: 300px;
+  color: white;
+  left: 160px;
+}
+
+.inside-above-video-content {
+  text-align: center;
+}
+
+.inside-mission-container {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sub-container {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+.sub-container img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.sub-container h2 {
+  margin-bottom: 30px;
+}
+
+.Apply-container img {
+  margin-top: 50px;
+  margin-left: 250px;
+  height: 80vh;
+  width: 60vw;
+  margin-bottom: 30px;
+}
+
+.sub-apply-container {
+  position: absolute;
+  text-align: center;
+  top: 260vh;
+  left: 600px;
+}
+
+.sub-apply-container h1 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.franchise-queries-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.franchise-queries-container span {
+  margin-bottom: 50px;
+}
+
+.queries-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  column-gap: 40px;
+}
+
+.sub-queries {
+  display: flex;
+}
+
+.sub-queries p {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(199, 123, 244) 0%,
+    rgb(255, 86, 114) 100%
+  );
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+  .mission-vision{
+     padding-top: 10vh;
+  }
+
+  .ul-navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .above-video-content a {
+    position: relative;
+  }
+
+  .above-video-content {
+    flex-direction: column;
+    top: 100px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    width: auto;
+  }
+
+  .above-video-content h1 {
+    font-size: 20px !important;
+  }
+
+  .inside-above-video-content h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .inside-above-video-content button {
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .main {
+    margin-top: 10vh;
+  }
+
+  .sub-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .Apply-container {
+    margin-top: 20vh;
+    height: 300px;
+  }
+
+  .Apply-container img {
+    text-align: center;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sub-apply-container{
+    position: absolute;
+    top: 320vh;
+    height: 100vh;
+    margin: auto;
+    left: 100px;
+  }
+
+  .sub-apply-container button {
+     position: absolute;
+     bottom: 27vh;
+     right: 5px;
+     left: 5px;
+  }
+
+  .franchise-queries-container{
+      padding-top: 80px;
+  }
+
+  .queries-container {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .main-sub-container {
+    margin-bottom: 10px;
+  }
+
+  .main-sub-container h3 {
+    font-size: 16px;
+  }
+
+  .sub-queries {
+    justify-content: center;
+  }
+
+  .button-video{
+    height: 30px;
+    padding-bottom: 50vh;
+  }
+}

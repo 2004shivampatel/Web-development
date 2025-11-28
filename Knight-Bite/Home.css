@@ -1,0 +1,233 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+    }
+
+    /* Background Image */
+    #outside-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 150vh;
+      width: 100vw;
+      z-index: 0;
+    }
+
+    /* Main container above background */
+    .main-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      background: rgba(0, 0, 0, 0.12);
+      /* Optional dark background */
+      z-index: 3;
+    }
+
+    /* Optional overlay effect */
+    .main-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.12);
+      z-index: 1;
+    }
+
+    .sub-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+    }
+
+    .outside-img-content {
+      position: relative;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin-top: 250px;
+    }
+
+
+    .sub-container img {
+      height: 40px;
+      width: 40px;
+    }
+
+    .sub-container h3 {
+      color: white;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .subside {
+      padding-top: 45px;
+      color: white;
+    }
+
+    .navbar-container {
+      position: relative;
+      z-index: 3;
+    }
+
+    .ul-navbar {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    .li-navbar {
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+
+
+    .li-navbar:hover {
+      color: #ffcc00;
+    }
+
+    
+    /* Remove underline from navbar links and apply color */
+    .li-navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .li-navbar a:hover {
+      color: #ffcc00;
+    }
+
+    .sub-subside {
+      display: grid;
+      justify-content: center;
+    }
+
+    .img-sec {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 40px;
+      padding-bottom: 50px;
+      align-items: center;
+    }
+
+    .img-sec img {
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+
+    }
+
+    .img-sec img:hover {
+      transform: scale(1.1);
+    }
+
+    .para-container {
+      text-align: center;
+    }
+
+    .para-container:hover {
+      cursor: pointer;
+      color: red;
+    }
+
+    .main {
+      margin-top: 310px;
+      position: static;
+    }
+
+    .section-area {
+      position: absolute;
+      margin: 0%;
+      padding: 0%;
+      display: block;
+    }
+
+    .section-area img {
+      width: 1000%;
+      max-width: 1380px;
+      border-radius: 2px;
+      margin-bottom: -100px;
+    }
+
+    .sub-section-img-one h1 {
+      position: relative;
+      text-align: center;
+      color: white;
+      bottom: 450px;
+      font-size: 500%;
+      font-weight: bolder;
+      font-family: "Special Gothic Expanded One", sans-serif;
+    }
+
+    .sub-section-img-two h1 {
+      position: relative;
+      text-align: center;
+      color: white;
+      bottom: 400px;
+      font-size: 500%;
+      font-weight: bolder;
+      font-family: "Special Gothic Expanded One", sans-serif;
+    }
+
+    .connect-container{
+        color: black;
+        position: relative;
+        top: 250vh;
+    }
+
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      top: 255vh;
+      background-image: linear-gradient(90deg, rgb(199, 123, 244) 0%, rgb(255, 86, 114) 100%);
+      color: white;
+    }
+
+    .two-footer-logo{
+        position: relative;
+        top: 250vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin-top: 150px;
+    }
+
+    .connect-container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: auto auto auto;
+      row-gap: 20px;
+    }
+
+
+    

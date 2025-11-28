@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./Franchise.css"> -->
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background: rgba(0, 0, 0, 0.12);
+  /* Optional dark background */
+  z-index: 3;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+.main-sub-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.li-navbar a:hover {
+  color: #ffcc00;
+}
+
+.li-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-container {
+  position: relative;
+  z-index: 3;
+}
+
+.ul-navbar {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+@font-face {
+  font-family: "Nicotine";
+  src: url("./fonts/Nicotine-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-sub-container img {
+  height: 40px;
+  width: 40px;
+}
+
+.main-sub-container h3 {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.above-video-content {
+  position: absolute;
+  cursor: pointer;
+  top: 300px;
+  color: white;
+  left: 160px;
+}
+
+.inside-above-video-content {
+  text-align: center;
+}
+
+.inside-mission-container {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sub-container {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+.sub-container img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.sub-container h2 {
+  margin-bottom: 30px;
+}
+
+.Apply-container img {
+  margin-top: 50px;
+  margin-left: 250px;
+  height: 80vh;
+  width: 60vw;
+  margin-bottom: 30px;
+}
+
+.sub-apply-container {
+  position: absolute;
+  text-align: center;
+  top: 260vh;
+  left: 600px;
+}
+
+.sub-apply-container h1 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.franchise-queries-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.franchise-queries-container span {
+  margin-bottom: 50px;
+}
+
+.queries-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  column-gap: 40px;
+}
+
+.sub-queries {
+  display: flex;
+}
+
+.sub-queries p {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(199, 123, 244) 0%,
+    rgb(255, 86, 114) 100%
+  );
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+  .mission-vision{
+     padding-top: 10vh;
+  }
+
+  .ul-navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .above-video-content a {
+    position: relative;
+  }
+
+  .above-video-content {
+    flex-direction: column;
+    top: 100px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    width: auto;
+  }
+
+  .above-video-content h1 {
+    font-size: 20px !important;
+  }
+
+  .inside-above-video-content h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .inside-above-video-content button {
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .main {
+    margin-top: 10vh;
+  }
+
+  .sub-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .Apply-container {
+    margin-top: 20vh;
+    height: 300px;
+  }
+
+  .Apply-container img {
+    text-align: center;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sub-apply-container{
+    position: absolute;
+    top: 320vh;
+    height: 100vh;
+    margin: auto;
+    left: 100px;
+  }
+
+  .sub-apply-container button {
+     position: absolute;
+     bottom: 27vh;
+     right: 5px;
+     left: 5px;
+  }
+
+  .franchise-queries-container{
+      padding-top: 80px;
+  }
+
+  .queries-container {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .main-sub-container {
+    margin-bottom: 10px;
+  }
+
+  .main-sub-container h3 {
+    font-size: 16px;
+  }
+
+  .sub-queries {
+    justify-content: center;
+  }
+
+  .button-video{
+    height: 30px;
+    padding-bottom: 50vh;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header>
+        <div class="outside-video">
+            <video src="./image/franchise-video.mp4" autoplay loop muted style="width: 100%;"></video>
+            <div class="above-video-content">
+                <h1 style="font-size: 70px; font-weight: bolder; margin-right: 10px;">FRANCHISE WITH KNIGHT BITE</h1>
+                <div class="inside-above-video-content">
+                    <h1 style="margin-bottom: 80px; font-weight: bolder;">GET STARTED WITH THE MODERN WAY OF DOING
+                        BUSINESS
+                    </h1>
+                    <button
+                        style="margin-bottom: 40px; height: 50px;  width: 160px; background-color: #FF5672; color: white; border-radius: 20px;">APPLY
+                        NOW</button>
+                  
+                        <a href="./image/franchise-video.mp4"
+                            style="text-decoration: none; color: black; font-size: 20px;"><span><img
+                                    src="./image/video-icon.png"
+                                    style="width: 20px; font-style: black; height: 20px; margin-right: 4px;"
+                                    alt="">Watch Video</span></a>
+
+                </div>
+            </div>
+    </header>
+
+    </div>
+    <div class="main-container">
+        <!-- Left: Logo and Title -->
+        <div class="main-sub-container">
+            <img src="./image/idZCDedDS4_logos.png" alt="Logo">
+            <h3>KNIGHT BITE</h3>
+        </div>
+        <!-- Right: Navbar -->
+        <div class="navbar-container">
+            <nav class="navbar">
+                <ul class="ul-navbar">
+                    <li class="li-navbar">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="li-navbar">
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li class="li-navbar">
+                        <a href="./Menu.html">Menu</a>
+                    </li>
+                    <li class="li-navbar">
+                        <a href="./Franchise.html">Franchise</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+
+
+    <!-- main content -->
+    <section>
+            <div style="text-align: center; margin-top: 70px;" class="mission-vision">
+            <h1 style="margin-bottom: 40px;">Mission and Vision</h1>
+            <div class="inside-mission-container">
+                <sapn>Our Mission is to deliver the best food with the <br> ultimate customer service.</sapn>
+            </div>
+            <div class="inside-mission-container">
+                <span>Our Vision is to be the most favourite food chain brand in the <br> country and world.</span>
+            </div>
+        </div>
+        <hr style="color:#c87bf4fc; height: 3px; width: 85vw; margin: 0 auto 40px; background-color: blue;">
+
+
+        <div class="main">
+            <h1 style="text-align: center; margin-bottom: 30px;">Key Benefits Of Knight Bite Franchise</h1>
+
+            <div class="sub-container">
+                <div class="small-div">
+                    <img src="https://www.knight-bite.com/res/franchise/1.svg" alt="">
+                    <h2>LOW INVESTMENT</h2>
+                    <p>No need of prime roadside location, interior <br>
+                        decor. A office desk and any well hygenic <br>
+                        kitchen space is enough.</p>
+                </div>
+
+                <div class="small-div">
+                    <img src="https://www.knight-bite.com/res/franchise/2.svg" alt="">
+                    <h2>LOW MAINTAINANCE</h2>
+                    <p>The hygiene, rent, staff and storage is the<br>
+                        only maintenanece the franchise would have <br>
+                        to focus on.</p>
+                </div>
+
+                <div class="small-div">
+                    <img src="https://www.knight-bite.com/res/franchise/3.svg" alt="">
+                    <h2>BASIC SKILLSET</h2>
+                    <p>Anyone with basic training can step into the <br> shoes of the
+                        staff. No serious training is <br>
+                        required. Materials are sent.
+                    </p>
+                </div>
+
+                <div class="small-div">
+                    <img src="https://www.knight-bite.com/res/franchise/4.svg" alt="">
+                    <h2>IN-HOUSE POS</h2>
+                    <p>POS will be provided to manage and track <br>
+                        orders with ease. All the applications are <br>
+                        interconnected to the POS. Moreover call <br>
+                        centre customer suppport will also be provided.</p>
+                </div>
+
+                <div class="small-div">
+                    <img src="https://www.knight-bite.com/res/franchise/5.svg" alt="">
+                    <h2>GOOD PROFIT MARGIN</h2>
+                    <p>Establishment running cost is much lesser <br>
+                        than traditional restaurant. You are in for a <br>
+                        good profit margin.</p>
+                </div>
+
+                <div class="small-div">
+                    <img src="https://www.knight-bite.com/res/franchise/pandemic_ic.svg" alt="">
+                    <h2>PANDEMIC FRIENDLY</h2>
+                    <p>Knight Bite is the most successful business <br>
+                        to run hassle-free even during the Pandemic. <br>
+                        The faith in Knight Bite has taken a hit due to <br>
+                        its high efficiency and extraordinary <br>sustainability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="Apply-container">
+            <img src="./image/apply-grid.png" alt="">
+            <div class="sub-apply-container">
+                <h1>Apply Here</h1>
+                <p>Request for initial meeting</p>
+                 <button
+                    style="margin-top: 90vh; margin-bottom: 100px; height: 45px; font-size: 17px; width: 200px; border-radius: 30px; color: white; background-color: #FF5672; font-weight: bolder;">APPLY
+                    NOW</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- margin:0px auto 40px; -->
+    <footer>
+        <div class="franchise-queries-container" style="margin-bottom: 100px;">
+            <h1 style="text-align: center; padding-bottom: 30px;">Franchise Queries</h1>
+            <div class="queries-container">
+                <div class="sub-queries">
+                    <img src="./image/footer-1.svg" alt="">
+                    <p>Franchise Brochure</p>
+                </div>
+                <div class="sub-queries">
+                    <img src="./image/phone_icon.svg" alt="">
+                    <p>08047192034</p>
+                </div>
+                <div class="sub-queries">
+                    <img src="./image/mail_icon.svg" alt="">
+                    <p>info@knight-bite.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Ⓒ Copyright 2025. Knight Bite Pvt. Ltd. All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>

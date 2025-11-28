@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+    }
+
+    .main-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      background: rgba(0, 0, 0, 0.12);
+      /* Optional dark background */
+      z-index: 3;
+    }
+
+    .main-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.12);
+      z-index: 1;
+    }
+
+    .sub-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+    }
+
+    .li-navbar a:hover {
+      color: #ffcc00;
+    }
+
+    .li-navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-container {
+      position: relative;
+      z-index: 3;
+    }
+
+    .ul-navbar {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    @font-face {
+      font-family: 'Nicotine';
+      src: url('./fonts/Nicotine-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .sub-container img {
+      height: 40px;
+      width: 40px;
+    }
+
+    .sub-container h3 {
+      color: white;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .about-img-container img {
+      height: 100vh;
+      width: 100vw;
+      margin: 0%;
+    }
+
+    .inside-about-image-container h1 {
+      position: absolute;
+      font-size: 50px;
+      bottom: 300px;
+      color: white;
+      width: 650px;
+      top: 150px;
+      left: 100px;
+    }
+
+    .all-about-time-full-content img {
+      width: 500px;
+      margin-right: 20px;
+    }
+
+    .all-about-time-full-content p {
+      width: 700px;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      top: 20vh;
+      background-image: linear-gradient(90deg, rgb(199, 123, 244) 0%, rgb(255, 86, 114) 100%);
+      color: white;
+    }
+
+    .all-about-time-full-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      row-gap: 100px;
+    }
+
+    .outside-about-time-full-content {
+      margin-top: 100px;
+    }
+
+    .location-sub-inner-footer-section{
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .location-sub-inner-footer-section p{
+      margin-left: 20px;
+    }
+
+    .main-footer-container{
+      margin-top: 50px;
+      display: flex;
+    }
+
+    .footer-section-one{
+      margin-left: 300px;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <div class="about-img-container">
+    <img src="./image/banner-about.webp" alt="">
+    <div class="inside-about-image-container">
+      <h1>KNIGHT BITE IS A CLOUD KITCHEN WHICH DELIVERS FOOD TO THE NOCTURNALS GIVING EQUAL EMPHASIS ON FOOD, TECHNOLOGY
+        AND LOGISTICS.</h1>
+    </div>
+  </div>
+  <div class="main-container">
+    <!-- Left: Logo and Title -->
+    <div class="sub-container">
+      <img src="./image/idZCDedDS4_logos.png" alt="Logo">
+      <h3>KNIGHT BITE</h3>
+    </div>
+    <!-- Right: Navbar -->
+    <div class="navbar-container">
+      <nav class="navbar">
+        <ul class="ul-navbar">
+          <li class="li-navbar">
+            <a href="./Home.html">Home</a>
+          </li>
+          <li class="li-navbar">
+            <a href="./About.html">About</a>
+          </li>
+          <li class="li-navbar">
+            <a href="./Menu.html">Menu</a>
+          </li>
+          <li class="li-navbar">
+            <a href="./Franchise.html">Franchise</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="outside-about-time-full-content">
+    <div class="all-about-time-full-content">
+      <img src="./image/food-strip.webp" alt="">
+      <p>Knight Bite started with the idea to serve all the hungry nocturnals who find it really difficult to order late
+        night muchies. KB brought together late night eaters and helped them order delicious meals at their convenience
+        via Knight Bite App and call.</p>
+    </div>
+
+    <div class="all-about-time-full-content">
+      <p>Knight Bite is one such concept which was highly successful in adapting to the emerging market.
+        <br><br>
+        Biters (customers), accepted and loved the KB app that made the ordering process much more easier. In two weeks
+        of
+        the release of the app, it was trending on top food apps and was downloaded by more than 5000 users across
+        Mangalore and Manipal.
+      </p>
+      <img src="./image/app-menu.webp" alt="">
+    </div>
+
+    <div class="all-about-time-full-content">
+      <img src="./image/burger.webp" alt="">
+      <p>Going forward, our aim is to help and bring smiles in many more faces and cover many more cities across India
+        and
+        around the world.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="main-footer-container">
+      <div class="footer-section">
+      <h1 style="margin-left: 20px; margin-bottom: 20px;">Locations</h1>
+      <div class="inner-footer-section">
+        <div class="location-sub-inner-footer-section">
+          <h2>Bangaluru</h2>
+          <p><b>Hours:</b> 7:00 pm - 4:00 am</p>
+        </div>
+        <div class="location-sub-inner-footer-section">
+          <h2>Mangalore</h2>
+          <p><b>Hours:</b> 7:00 pm - 4:00 am</p>
+        </div>
+        <div class="location-sub-inner-footer-section">
+          <h2>Mysuru</h2>
+          <p><b>Hours:</b> 7:00 pm - 4:00 am</p>
+        </div>
+        <div class="location-sub-inner-footer-section">
+          <h2>Hyderabad</h2>
+          <p><b>Hours:</b> 7:00 pm - 4:00 am</p>
+        </div>
+        <div class="location-sub-inner-footer-section">
+          <h2>Hubli</h2>
+          <p><b>Hours:</b> 7:00 pm - 4:00 am</p>
+        </div>
+        <div class="location-sub-inner-footer-section">
+          <h2>Manipal</h2>
+          <p><b>Hours:</b> 7:00 pm - 4:00 am</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="footer-section-one">
+        <h1 style="margin-bottom: 20px; margin-top: 50px; margin-left: 10px;">Follow us</h1>
+        <div style="display: flex;" class="profile-tags">
+          <a href="https://www.instagram.com/knight_bite/">
+            <img src="./image/instagram.svg" style="margin-right: 40px;">
+          </a>
+          <a href="https://m.facebook.com/knightbiteIndia/ ">
+            <img src="./image/facebook.svg" style="margin-right: 40px;">
+          </a>
+          <a href="https://mobile.twitter.com/knight_bite">
+            <img src="./image/twitter.svg" style="margin-right: 40px;">
+          </a>
+          <a href="https://lu.linkedin.com/company/knightbite">
+            <img src="./image/linkedin.svg" style="margin-right: 40px;">
+          </a>
+          <a href="https://www.youtube.com/channel/UCbUM8v6bBtX8mcVFazJ9IQw">
+            <img src="./image/youtube.svg" style="margin-right: 40px;">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Ⓒ Copyright 2025. Knight Bite Pvt. Ltd. All Rights Reserved
+    </div>
+  </footer>
+</body>
+
+</html>
